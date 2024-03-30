@@ -1,0 +1,119 @@
+/* para tirar os espaços que o proprio browser coloca*/
+body{
+  margin:0;
+  font-family: "Open Sans", sans-serif;
+  background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(97, 216, 186, 0.38) 100%);
+  min-height: 100%;
+  
+}
+.page{
+width: 1000px;
+margin: 0 auto ;
+padding-top: 65px;
+ 
+/*list-style:none  esse comando serve para tirar as colinhas qewu ficam por conta da tag UL
+Ocomando gap vai servir para por "espaços" entre elementos,exemplo desse header (cabeçalho) home, sobre e treinar para fazer o alinhamento de eixo,ou melhor dizendo apra alinhas todos os elmentos em uma linha vamos usar o comando 
+align-items:center, para que o TREINE.ME fique alinho ao meio com os nav, home entre outros.
+o comando justify-content:space-between serve para  que coloque todos numa mesma linha;
+Para dar espaçamento entre o header e o main usei o margin-bottom */
+
+nav {
+  display: flex;
+  justify-content:space-between ;
+  align-items: center;
+  margin-bottom: 55px;
+ 
+
+}
+
+ul{
+ display: flex;
+  list-style: none;
+  gap: 48px; 
+  margin: 0 ;
+  padding: 0;
+}
+/*comanado para quando vc passar o mouse em cima ele receber ficar da menira que vc desejar nesse caso o bolde que ficara em negrito, font-weigth:bold;*/
+ul li a:hover {
+  font-weight: bold;
+}
+/* comando usado para retirar o sublinhado que automaticamente o link recebeu*/
+ul li a{
+  color: #1F1534;
+  text-decoration: none;
+}
+main{
+  display: flex;
+justify-content:space-between ;
+align-items: center;
+}
+
+
+/* FOI USADO A CIMA O NOME ul li a, o porque disso, porque eu quiz que os comandos de lista, ul , li  e o comando de link <a> recebessem esses mesmos atributos*/
+h1{
+  /*comando font-size usado para tamanho , line-heigth essa propriedade tem o objetivo de definir a altura da caixa que um conteúdo de texto pertence.*/
+  font-family: "Mulish", sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  color: #000;
+  font-weight: normal;
+
+}
+h1 span{
+  color: #89c5cc;
+  font-weight: bold;
+
+}
+p { 
+font-size: 14px;
+font-weight: 400;
+line-height: 28px;
+text-align: left;
+color:  #7D7987;
+margin:40px 0;
+}
+/*comando text-transfor:uppercasase usado para que as palavras,no caso do botão fiquem grandes*/
+
+button{
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  background-color: #69B99D;
+  color: white;
+
+ 
+  width: Hug (182px)px;
+  height: Fixed (56px)px;
+  top: 473px;
+  left: 120px;
+  padding: 14px 32px 15px 32px;
+  gap: 10px;
+  border-radius: 10px;
+  opacity: 0px;
+  display: flex;
+  align-items: center;
+  cursor:pointer;
+  
+}
+
+footer{
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+
+  
+
+}
+footer a{
+  font-weight: bold;
+  color: #000;
+}
+
+#balls{
+ position:fixed;
+ bottom:0;
+ right:0;
+}
+
+}
